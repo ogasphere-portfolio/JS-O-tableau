@@ -1,0 +1,26 @@
+<h1 id="otableau">O'Tableau</h1>
+<h2 id="notions-travaillées">Notions travaillées</h2>
+<ul>
+<li>Sélecteurs</li>
+<li>Event listeners</li>
+<li>Boucles</li>
+<li>Modification du DOM</li>
+</ul>
+<h2 id="instructions">Instructions</h2>
+<p>On va aider Bart Simpson à écrire ses punitions sur le tableau comme ci-dessous :</p>
+<p><img src="images/exemple.png" alt="exemple" /></p>
+<p>Dans ce dépôt, tu trouveras une page déjà intégrée avec deux champs : <em>texte du tableau</em> et <em>nombre de lignes</em>.<br />
+Ton but ici sera de faire en sorte que le texte du premier champ apparaisse dans le tableau noir, et autant de fois que le nombre indiqué dans le second champ.</p>
+<p>Les changements doivent se faire en direct. C'est à dire que le tableau se met à jour dès qu'on écrit dans l'un des champs.</p>
+<h2 id="étapes">Étapes</h2>
+<p>Voici quelques pistes pour bien commencer :</p>
+<ol>
+<li>Comme les changements se font en temps réel, il doivent se déclencher à chaque fois qu'une touche du <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/keyup_event#addeventlistener_keyup_example">clavier est relâchée</a>. Mais pas n'importe où ! Sur l'un des deux champs uniquement. On va donc poser nos écouteurs dessus.</li>
+<li>A chaque fois qu'un changement est détecté, on récupère les valeurs contenues dans les deux champs.</li>
+<li>Il faut penser à sélectionner la zone du tableau dans laquelle on va écrire. C'est la div <code>.text-board</code>. D'ailleurs elle est peut-être déjà remplie. Un petit nettoyage sera peut-être nécessaire.</li>
+<li>Comme il faut afficher le même texte plusieurs fois de suite en se basant sur le nombre indiqué dans le second champ, une <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/for">boucle</a> peut être utile.</li>
+<li>On peut ajouter du html dans un élément avec <a href="https://developer.mozilla.org/fr/docs/Web/API/Element/innertHTML">innerHTML</a>. Pour les sauts de lignes, un <code>&lt;br&gt;</code> fera l'affaire !</li>
+</ol>
+<h2 id="bonus">BONUS</h2>
+<p>Pour aller plus loin, tu peux ajouter des champs qui permettent de modifier la taille de la police, l'interlignage ou la couleur de la craie en direct !</p>
+<p>Si t'as envie d'aller encore plus loin, tu peux faire un champ qui permet de changer d'image de fond. Pourquoi pas faire un générateur pour toutes tes séries préférées ?</p>
